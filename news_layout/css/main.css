@@ -1,1 +1,56 @@
 /* Write your CSS here */
+html {
+  background: purple;
+  font-family: sans-serif;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  flex: 1;
+}
+
+.main-column {
+  flex: 2;
+}
+
+.article {
+  flex: 1;
+  flex-direction: column;
+  flex-basis: auto;
+  border: 5px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+
+.article-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.article-content {
+  flex: 1;
+}
+
+.nested-column {
+  flex: 2;
+}
+
+.first-article {
+  flex-direction: row;
+}
+
+.first-article .article-body {
+  flex: 1;
+}
+
+.first-article .first-imgage {
+  height: 300px;
+  order: 2;
+  padding-top: 0;
+  width: 400px;
+}
