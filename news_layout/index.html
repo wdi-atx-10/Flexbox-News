@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Flexbox Layout</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-  <!-- Starter File -->
-  </body>
+<head>
+	<title>The State of Platypus</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+</head>
+<body>
+
+<header>Platypus' Recent Works</header>
+
+<div class="columns">
+	<div class="leftsidebar">
+		<div class="processing">
+			<h1>These projects use the processing language, which is a java like language that works with graphics.</h1>
+			<p> Here are various resources that I found useful when playing around with this language:</p>
+			<ul>
+				<li>http://learningprocessing.com/examples/</li>
+				<li>https://processing.org/examples/</li>
+				<li>https://processing.org/tutorials/</li>
+				<li>https://www.openprocessing.org/ (this is the code playground, the place where you can put code in and test it online!)</li>
+				<li>all processing projects I worked on can be viewed here: https://github.com/patientplatypus/collidingballs</li>
+			</ul>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Processing_3_logo.png">
+		</div>
+		<div class="otherneatlanguages">
+			<h1>Here are some othe neat languages I like:<h1>
+			<img src = "https://www.rust-lang.org/logos/rust-logo-256x256-blk.png"><p>Rust</p>
+			<br>
+			<img src="https://chocolatey.org/content/packageimages/golang.1.6.png"><p>Go</p>
+			<br>
+			<img src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/Python_logo-128.png"><p>Python</p>
+			<br>
+		</div>
+	</div>
+	<div class="rightcontent">
+		<div class="row1">
+			<div class="bouncy">
+				<iframe src="//giphy.com/embed/3og0IDd3jq0i8C0RX2" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="http://giphy.com/gifs/3og0IDd3jq0i8C0RX2"></a>
+				<p>Here's a cool toy I've been working on. It's in a thing called "processing" which is perhaps the worst possible name for a programming language I've ever heard. On the other hand, it's a fun java like environment that makes it easy to construct graphical animations right outside of the box. Here I've made some balls that bounce and also decelerate and fall down to the bottom with gravity. The line is a vector caused by the mouse clicking and dragging, shooting new balls out relative to that vector. I worked a bit on the collision detection which I got "sortof" working. I put the project on hold when I found out that I had to read a few page math paper to get the balls to bounce off each other in relation to their proper vectors (like billiards). </p>
+			</div>	
+			<div class="trippy">
+				<iframe src="//giphy.com/embed/3og0IuhfxabtKlQdS8" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="https://giphy.com/gifs/3og0IuhfxabtKlQdS8"></a>
+				<p>This is called trippy dots! I like this little visual for a couple of reasons. First, if you make little things like this you might be able to put them in the background of webpages, or use them as static icons and backgrounds for visual effects that css may not be able to do on its own (or as easily). This is great if you want to differentiate your website from what everyone else is doing these days. Also, it's interesting to note that the programming for this is very simple, but tweaking the dots to get the stereoscopic overlapping effect is a matter of artistic finesse. So it's a great toy to play with and get to exercise artistic ability over technical.</p>
+			</div>
+			<div class="ship">
+				<iframe src="//giphy.com/embed/3ohzdP0QWywbLtUU0M" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><a href="http://giphy.com/gifs/3ohzdP0QWywbLtUU0M"></a>
+				<p>This is the first project that I did in processing. There's two basic parts - first I made the little ship you see by sticking together basic shapes and then classing them as one big shape. It felt a bit like css to me! The second part was making the ship move. You can't really tell from the gif, but its following my cursor when I run the code. The difficult part was getting the rotation of the ship, which I shamelessly cribbed from reddit I think. If I get around to figuring out how to do collisions and working with circles I might program in firing and bullets. If I'm lazy I might just stick to laser beams :D.</p>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="row2">
+			<div class="why">
+				<p>Why do I like these languages? First, python. Python is easy to learn and there's a book out there by no starch press called Python Crash Course. It's only 150 or so pages and you can pretty much knock out the basics of the language quickly. It's also a high level language, meaning that it is highly abstracted away from the compiler. It lets you do more things, at the expense of doing them slower and sometimes not being as precise. But! You can write very readable and clean code. Both Rust and Go are newer languages that are compiled rather than interpreted. Go is more useful for concurency, which is a way to tell a computer to break a problem into several steps and compute each step separately. This is greate for cloud computing and multi-core machines, so long as the problem at hand is easily parallelized. Personally I prefer Rust. While Rust can also handle concurency what's so neat about it is that it's error handler is very verbose (which is great for n00bs) and it's mutability abstraction prevents pointer loss errors which can be a problem in C.</p>
+			</div>
+			<div class="projects">
+				<p>I've only done a few projects in each of the languages, mostly just to test the waters. I have a cool 30 or 40 line Conway's game of life in native C, but I don't really think I can count that one. The one's I'm most proud of at the moment have been making a sudoku solver in Go, making a Connect4 game and tower of Hanoi solver in Rust, and probably the tictactoe game I made in python. Both the tictactoe and the Connect4 game have "ai" which is fancy speak for a decision tree for automated moves on the computer's part. The two solvers, for sudoku and towers of Hanoi, use an algorithm to generate the result. While the towers of Hanoi code is super clean, that I algo only implemented from wikipedia. The sudoku one I got on my own and it's actually pretty shwifty. Future projects need to start implementing more visual components, as all these games are only playable through terminal. I might make a lightsout game in processing....hmm....</p>
+			</div>
+			<div class="pic">
+				<p>And now I've run out of things to say so I'll just end on a pic of me being stupendous</p>
+				<img src="http://68.media.tumblr.com/440ee8880ec31ecd493465ce7f2345f1/tumblr_ncpnag4F6D1rw1i3co1_1280.jpg">
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+
+<footer>
+	<p>bear hug emoji productions     ʕ ⊃･ ◡ ･ ʔ⊃    ε=ε=ε=┏(ﾟロﾟ;)┛</p>
+</footer>
+
 </html>
