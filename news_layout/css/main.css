@@ -1,1 +1,86 @@
-/* Write your CSS here */
+html {
+  background: lightblue;
+  font-family: helvetica sans-serif;
+}
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.columns {
+  /*display: flex;*/
+}
+.column {
+  flex: 1;
+  /*display: flex;*/
+  flex-direction: column;
+}
+.main-column {
+  flex: 2;
+}
+.nested-columns {
+  flex: 2;
+}
+.article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  background: white;
+  color: black;
+  margin: 3%;
+}
+.article-image {
+  width: 100%;
+}
+.article-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 0 1.3em;
+}
+.article-content {
+  flex: 1;
+  margin-top: -0.7em;
+  line-height: 1.3em;
+}
+.article-footer {
+  display: flex;
+  margin-top: -2em;
+}
+.article-author {
+  flex: 1;
+}
+.article-comments {
+  flex: 1;
+  text-align: right;
+}
+.first-article {
+  flex-direction: row;
+}
+.first-article .article-body {
+  flex: 1;
+}
+.first-article .article-image {
+  order: 2;
+  height: 100%;
+  max-width: 70%;
+  padding-top: 5%;
+  padding-right: 2%;
+}
+ @media screen and (min-width: 800px) {
+   .columns,
+   .column {
+     display: flex;
+   }
+ }
+@media screen and (min-width: 1200px) {
+  .first-article {
+    flex-direction: row;
+  }
+  .main-column {
+    flex: 3;
+  }
+  .nested-columns {
+    flex: 2;
+  }
+}
