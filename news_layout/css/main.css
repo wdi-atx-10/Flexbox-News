@@ -1,1 +1,43 @@
 /* Write your CSS here */
+@media screen and (min-width: 800px) {
+  .columns,
+  .column {
+    display: flex;
+  }
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.nest-column {
+  flex: 2;
+}
+
+.article{
+  flex: 1;
+}
+
+.first-article{
+  flex-direction: row;
+}
+
+.firstarticle .article-body{
+  flex:1;
+}
+
+.firstarticle{
+  height: 300px;
+  order: 2;
+  padding-top: 0;
+  width: 400px;
+}
+
+.main-column {
+  flex: 2;
+}
