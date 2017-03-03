@@ -1,1 +1,138 @@
-/* Write your CSS here */
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
+header {
+	color:white;
+	background: seagreen;
+}
+
+body {
+	font-family: Baloo;
+}
+
+.columns {
+	display:flex;
+	flex-direction: row;
+}
+
+.processing img {
+	width:60%;
+}
+
+.leftsidebar {
+	flex:1;
+	flex-direction: column;
+	background-color: teal;
+	
+}
+.rightcontent {
+	display:flex;
+	flex-direction: column;
+	flex:2;
+	background-color: lightblue;
+}
+
+.row1 {
+	display: flex;
+	flex-direction: row;
+	flex:3;
+	flex-flow:space-around;
+}
+
+
+
+.row2 {
+	display: flex;
+	flex-direction: row;
+	flex:3;
+	flex-flow:space-around;
+	background-color: purple;
+	color:yellow;
+}
+
+
+
+
+.processing{
+	flex-direction: center;
+	background-color:sienna;
+}
+
+.bouncy {
+
+	order:1;
+}
+
+.bouncy p {
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 2px;
+	border-color: darkblue;
+	
+}
+
+.trippy {
+
+	order:2;
+
+}
+
+.trippy p {
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 2px;
+	border-color: darkblue;
+}
+
+.ship {
+	order: 3;
+}
+
+.ship p {
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 2px;
+	border-color: darkblue;
+}
+
+.otherneatlanguages {
+	background: gold;
+}
+
+.otherneatlanguages img {
+	width:100px;
+	float:left;
+}
+
+.otherneatlanguages p {
+}
+
+.why{
+	order:1;
+	font-size: 20px;
+}
+
+.projects{
+	order:2;
+	font-size:20px;
+}
+
+.pic{
+	order:3;
+	font-size:20px;
+}
+
+.pic img {
+	width: 400px;
+}
+
+footer {
+	background: gray;
+	font-size: 25px;
+	color: red;
+	text-align:center;
+	position: relative;
+	left:0;
+	right:0;
+	top:0px;
+	bottom:0px;
+}
