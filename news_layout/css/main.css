@@ -1,1 +1,68 @@
-/* Write your CSS here */
+html{
+  background: lightpink;
+  font-family: lato;
+}
+
+h1{
+  font-size: 40px;
+}
+
+body {
+  margin: 0;
+}
+
+nav.menu .menu-inner li{
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.logo{
+text-align: center;
+}
+
+nav {
+  position: relative;
+  left: -20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+header {
+  background: lightblue;
+}
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.columns{
+  display: flex;
+}
+
+.columns .column-main{
+  flex: 2;
+  padding-top: 15px;
+}
+
+.columns .column-side{
+  flex: 1;
+  margin-left: 15px;
+}
+
+.article-head img{
+  max-width: 100%;
+}
+
+main {
+margin-top: 50px;
+padding: 0 25px;
+}
+
+.article {
+  background: lightgrey;
+}
+
+.article-body{
+  color: grey;
+  padding: 10px;
+}
