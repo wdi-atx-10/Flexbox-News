@@ -1,1 +1,71 @@
-/* Write your CSS here */
+html {
+  font-family:sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.columns {
+  display: flex;
+}
+
+div, h2, p, figure {
+  margin: 0
+  padding: 0;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 1040px;
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  background: red;
+  border: 6px solid #ccc;
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-column {
+  flex: 2;
+}
+
+.article {
+  background: lightblue;
+  border: 5px solid blue;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+}
+
+.article-image {
+  background: #fff;
+  display: block;
+  padding-top: 75%;
+  position: relative;
+  width: 100%;
+}
+
+.article-image img {
+  display: block;
+  height: 100%auto;left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+  .article-image pic2 {
+    padding-top: 66.6666%;
+  }
